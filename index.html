@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+    
+    <title>Automação com Python para Iniciantes - @pytk_solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-content">
+            <div class="navbar-brand">
+                <span class="code-icon">💻</span>
+                <span class="brand-name">@pytk_solutions</span>
+            </div>
+            <button class="btn btn-primary" onclick="handleCheckoutEbook()">Comprar eBook</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">✨</span>
+                    <span>📘 Ebook em Português </span>
+                    <img src="./ebook.jpeg" alt="CAPA EBOOK" class="ebook-cover" width="200" Height="300">
+                </div>
+
+                <h1 class="hero-title">
+                    Automação com Python para <span class="highlight"> Vocês é Iniciante <br> <span>agora você pode!</span> </span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    Crie robôs que trabalham por você e economize <span class="highlight-yellow">horas de trabalho</span> todos os dias
+                </p>
+
+                <p class="hero-description">
+                    Aprenda a automatizar tarefas repetitivas com Python, mesmo que você nunca tenha programado antes. Do básico até projetos profissionais em poucos capítulos.
+                </p>
+
+                <div class="hero-buttons">
+                    <button class="btn btn-primary btn-large" onclick="handleCheckoutEbook()">
+                        Comprar eBook <span class="arrow">→</span>
+                    </button>
+                    
+                    <button class="btn btn-outline btn-large"
+                        onclick= location.href="#vdcurso" >
+                        Ver Curso em Vídeo
+                    </button>
+                    <button class="btn btn-outline btn-large" onclick="sumario()">
+Ver Sumário do eBook
+</button>
+<div id="sumarioEbook" class="sumario-box">
+
+<h2>Sumário do eBook</h2>
+
+<ol>
+
+<li>O que é automação</li>
+<li>Por que Python é perfeito para automação</li>
+<li>Instalando Python</li>
+<li>Seu primeiro script automático</li>
+<li>Automatizando o mouse e teclado (PyAutoGUI)</li>
+<li>PyAutoGUI vs Keyboard: Qual usar e por quê?</li>
+<li>A Biblioteca Keyboard: Comandos essenciais</li>
+<li>Automatizando tarefas no computador (arquivos, pastas, relatórios)</li>
+<li>A Biblioteca os: Interagindo com o Sistema Operacional</li>
+<li>Automatizando a web (Selenium)</li>
+<li>A Biblioteca webbrowser: Abrindo URLs no navegador</li>
+<li>Automatizando planilhas (Pandas)</li>
+<li>Criando bots simples (juntando tudo)</li>
+<li>Ideias para ganhar dinheiro com automação</li>
+<li>Capítulo bônus: 10 ideias de projetos</li>
+<li>Bônus detalhados (1 a 20)</li>
+<li>Bônus Extra: Robô de Produtividade Completo</li>
+<li>Bônus adicionais para sua jornada de automação</li>
+<li>Bônus exclusivo: Resolvendo a tecla fantasma</li>
+<li>Controle de versão com Git</li>
+<li>Guia de formatação de PC</li>
+<li>Próximo passo: vídeo aulas práticas</li>
+
+</ol>
+
+</div>
+                    
+                </div>
+
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <span class="check-icon">✓</span>
+                        <span>Acesso Imediato</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="check-icon">✓</span>
+                        <span>Sem Assinatura</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="check-icon">✓</span>
+                        <span>Bônus Exclusivos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problema/Solução -->
+    <section class="problem-solution">
+        <div class="container">
+            <h2 class="section-title">Você está cansado de tarefas repetitivas?</h2>
+
+            <div class="problem-grid">
+                <!-- Problema -->
+                <div class="card card-problem">
+                    <h3 class="card-title">❌ O Problema</h3>
+                    <ul class="problem-list">
+                        <li><span class="bullet">•</span> Clicar 200 vezes por dia em tarefas iguais</li>
+                        <li><span class="bullet">•</span> Erros manuais que custam tempo e dinheiro</li>
+                        <li><span class="bullet">•</span> Perder horas com trabalho que deveria ser automático</li>
+                        <li><span class="bullet">•</span> Não conseguir focar em tarefas importantes</li>
+                    </ul>
+                </div>
+
+                <!-- Solução -->
+                <div class="card card-solution">
+                    <h3 class="card-title">✅ A Solução</h3>
+                    <ul class="solution-list">
+                        <li><span class="bullet">•</span> Robôs que fazem o trabalho por você 24/7</li>
+                        <li><span class="bullet">•</span> Precisão 100% - sem erros humanos</li>
+                        <li><span class="bullet">•</span> Economizar 10+ horas por semana</li>
+                        <li><span class="bullet">•</span> Focar no que realmente importa</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O que você vai aprender -->
+    <section class="learning-section">
+        <div class="container">
+            <h2 class="section-title">O que você vai aprender</h2>
+
+            <div class="learning-grid">
+                <div class="learning-card">
+                    <div class="card-icon">🐍</div>
+                    <h3>Python Básico</h3>
+                    <p>Fundamentos que você realmente precisa</p>
+                </div>
+
+                <div class="learning-card">
+                    <div class="card-icon">🖱️</div>
+                    <h3>PyAutoGUI</h3>
+                    <p>Controle mouse e teclado automaticamente</p>
+                </div>
+
+                <div class="learning-card">
+                    <div class="card-icon">⌨️</div>
+                    <h3>Keyboard Library</h3>
+                    <p>Capture e dispare atalhos globais</p>
+                </div>
+
+                <div class="learning-card">
+                    <div class="card-icon">🌐</div>
+                    <h3>Selenium</h3>
+                    <p>Automatize navegação web</p>
+                </div>
+
+                <div class="learning-card">
+                    <div class="card-icon">📊</div>
+                    <h3>Pandas</h3>
+                    <p>Manipule planilhas como um profissional</p>
+                </div>
+
+                <div class="learning-card">
+                    <div class="card-icon">🎯</div>
+                    <h3>Projetos Práticos</h3>
+                    <p>20+ ideias prontas para usar</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bônus -->
+    <section class="bonus-section">
+        <div class="container">
+            <h2 class="section-title">🎁 Bônus Exclusivos</h2>
+
+            <div class="bonus-grid">
+                <div class="bonus-card">
+                    <div class="bonus-icon">🤖</div>
+                    <h3>Robô de Produtividade</h3>
+                    <p>Um script pronto que organiza seus arquivos, cria checklists e faz backups automaticamente. Copie e use hoje mesmo!</p>
+                    <div class="bonus-tag">✓ Código comentado</div>
+                </div>
+
+                <div class="bonus-card">
+                    <div class="bonus-icon">⚡</div>
+                    <h3>Resolvedor Tecla Fantasma</h3>
+                    <p>Seu teclado digita sozinho? Receba uma ferramenta + guia completo para diagnosticar e resolver o problema.</p>
+                    <div class="bonus-tag">✓ Ferramenta pronta</div>
+                </div>
+
+                <div class="bonus-card">
+                    <div class="bonus-icon">📚</div>
+                    <h3>Guia de Git</h3>
+                    <p>Aprenda a versionar seus códigos e nunca mais perca seu trabalho. Inclui link para guia interativo.</p>
+                    <div class="bonus-tag">✓ Recurso externo</div>
+                </div>
+
+                <div class="bonus-card">
+                    <div class="bonus-icon">💡</div>
+                    <h3>20+ Projetos Prontos</h3>
+                    <p>Ideias de robôs que você pode criar e até monetizar. Cada uma com descrição e dicas de implementação.</p>
+                    <div class="bonus-tag">✓ Ideias + código</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Próximo Passo -->
+    <section class="next-step">
+        <div class="container">
+            <h2 class="section-title">Próximo Passo: Aprofunde-se com Vídeo Aulas</h2>
+
+            <div class="next-step-card">
+                <p class="next-step-text">
+                    Depois de ler este eBook, você terá a base sólida. Se quiser dominar a automação e transformar em renda, o próximo passo é o curso em vídeo-aulas com projetos práticos.
+                </p>
+                <button id="vdcurso" class="btn btn-gradient" onclick="mostrarVideo()">
+                    Conhecer o Curso Completo aqui <span class="arrow">→</span>
+                </button>
+                <div class="sobre">
+
+                    <iframe id="videoCurso" style="display: none;"  width="560" height="315" src="https://www.youtube-nocookie.com/embed/IaByRWjguBw?si=l8SuDIO4lX9bLXXT&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe> 
+                    <button id="botaovideoCurso" style="display: none;" class="btn btn-white"  onclick="comprarvisto()">
+                    Comprar Curso <span class="arrow">→</span>
+                </button>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="cta-final">
+        <div class="container">
+            <h2>Pronto para começar?</h2>
+            <p>Escolha entre o eBook ou o Curso em Vídeo. Ambos com acesso imediato e sem assinatura.</p>
+            <div class="cta-buttons-final">
+                <a onclick="return false;" href="https://pay.hotmart.com/X105571049V?checkoutMode=2" class="hotmart-fb hotmart__button-checkout"><img src='https://static.hotmart.com/img/btn-buy-green.png' alt="Comprar eBook"></a>
+                <span class="or-text">ou</span>
+                <button class="btn btn-white" onclick="handleCheckoutCurso()">
+                    Comprar Curso <span class="arrow">→</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>💻 @pytk_solutions</h3>
+                    <p>Educação em automação e Python para iniciantes</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Links Úteis</h4>
+                    <ul>
+                        <li><a href="https://resolver-tecla-fantasma.vercel.app/" target="_blank">Resolvedor Tecla Fantasma</a></li>
+                        <li><a href="https://learning-git-amber.vercel.app/" target="_blank">Guia de Git</a></li>
+                        <li><a href="https://go.hotmart.com/A105072718R" target="_blank">Comprar Curso</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Contato</h4>
+                    <p>Siga @pytk_solutions nas redes sociais para atualizações</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 @pytk_solutions. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Security -->
+    <script src="security.js"></script>
+    
+    <!-- Hotmart Integration -->
+    <script type="text/javascript">
+        function importHotmart(){ 
+            var imported = document.createElement('script'); 
+            imported.src = 'https://static.hotmart.com/checkout/widget.min.js'; 
+            document.head.appendChild(imported); 
+            var link = document.createElement('link'); 
+            link.rel = 'stylesheet'; 
+            link.type = 'text/css'; 
+            link.href = 'https://static.hotmart.com/css/hotmart-fb.min.css'; 
+            document.head.appendChild(link);
+        } 
+        importHotmart(); 
+    </script>
+    
+    <script src="script.js"></script>
+</body>
+</html>

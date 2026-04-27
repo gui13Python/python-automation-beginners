@@ -1,0 +1,777 @@
+/* ============================================
+   RESET E VARIÁVEIS GLOBAIS
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #3b82f6;
+    --primary-dark: #1e40af;
+    --secondary-color: #8b5cf6;
+    --cardcolor: #e8e9ebcc;
+    --success-color: #10b981;
+    --presente-color: #64defd;
+    --danger-color: #ef4444;
+    --warning-color: #f59e0b;
+    --bg-dark: #0f172a;
+    --bg-darker: #020617;
+    --bg-card: #1e293b;
+    --bg-card-hover: #334155;
+    --text-primary: #ffffff;
+    --text-secondary: #4a6697;
+    --text-muted: #5178ad;
+    --border-color: #475569;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    --transition: all 0.3s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #0f172a via #1e293b to #0f172a);
+    color: var(--text-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* ============================================
+   CONTAINER
+   ============================================ */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ============================================
+   NAVBAR
+   ============================================ */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: var(--transition);
+    background: transparent;
+}
+
+.navbar.scrolled {
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.code-icon {
+    font-size: 24px;
+}
+
+/* ============================================
+   BOTÕES
+   ============================================ */
+
+.btn {
+    padding: 10px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+}
+
+.btn-outline {
+    border: 2px solid var(--border-color);
+    color: var(--text-secondary);
+    background: transparent;
+}
+
+.btn-outline:hover {
+    background: rgba(59, 130, 246, 0.1);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-large {
+    padding: 16px 32px;
+    font-size: 18px;
+}
+
+.btn-gradient {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+.btn-gradient:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(59, 130, 246, 0.4);
+}
+
+.btn-white {
+    background: white;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.btn-white:hover {
+    background: #f1f5f9;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(255, 255, 255, 0.2);
+}
+
+.arrow {
+    font-size: 20px;
+}
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+
+.hero {
+    padding: 160px 20px 80px;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(59, 130, 246, 0.2);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    color: #93c5fd;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    animation: slideDown 0.6s ease-out;
+    display : hidden;
+    FLEX-DIRECTION: column;
+    BACKGROUND: transparent;
+   border: none;
+    
+} 
+.sumario-box{
+display:none;
+background:#4a6bb3;
+padding:30px;
+border-radius:10px;
+margin-top:20px;
+color:white;
+max-width:800px;
+}
+
+
+
+.next-step-card .sobre{
+margin-top:20px;
+border-radius:10px;
+display:flex;
+justify-content:center;     
+justify-items:center;
+align-items:center;
+margin-bottom:20px;
+
+}
+
+.sobre button{
+padding:10px 20px;
+border:none;
+border-radius:5px;
+background:#3b82f6;
+color:white;
+font-weight:600;
+cursor:pointer;
+transition:var(--transition);
+}
+
+.sobre #botaovideoCurso{
+display:flex;
+align-items:center;
+justify-content:center; 
+align-self:center;
+max-width: 200px;
+margin-top:20px;
+}   
+
+
+#botaovideoCurso:hover{
+background:#1e40af;
+transform:translateY(-2px);
+box-shadow:0 8px 20px rgba(59,130,246,0.3);
+opacity: 0;
+display: none;
+transition: opacity 0.8s ease;
+}
+
+.sobre{
+display:flex;
+justify-content:center;
+align-items:center; 
+flex-direction:column;
+margin-top:20px;
+}
+
+
+#vd{
+display:none;
+margin-top:20px;
+}
+
+
+.sumario-box h2{
+margin-bottom:20px;
+}
+
+.sumario-box li{
+margin:8px 0;
+}
+
+.badge-icon {
+    font-size: 16px;
+}
+
+.hero-title {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 24px;
+    animation: slideDown 0.8s ease-out 0.1s both;
+}
+
+.hero-title .highlight {
+    color: #60a5fa;
+}
+
+.hero-subtitle {
+    font-size: 24px;
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+    animation: slideDown 1s ease-out 0.2s both;
+}
+
+.hero-subtitle .highlight-yellow {
+    color: #fbbf24;
+    font-weight: 600;
+}
+
+.hero-description {
+    font-size: 18px;
+    color: var(--text-muted);
+    margin-bottom: 40px;
+    animation: slideDown 1.2s ease-out 0.3s both;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    animation: slideDown 1.4s ease-out 0.4s both;
+}
+
+.hero-features {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    animation: slideDown 1.6s ease-out 0.5s both;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-secondary);
+}
+
+.check-icon {
+    color: var(--success-color);
+    font-size: 20px;
+}
+
+/* ============================================
+   SEÇÃO PROBLEMA/SOLUÇÃO
+   ============================================ */
+
+.problem-solution {
+    padding: 80px 20px;
+    background: rgba(30, 41, 59, 0.5);
+}
+
+.section-title {
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 60px;
+    color: var(--presente-color);
+}
+
+.problem-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+}
+
+.card {
+    padding: 32px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow);
+}
+
+.card-problem {
+    background: rgba(239, 68, 68, 0.1);
+    border-color: rgba(239, 68, 68, 0.3);
+}
+
+.card-solution {
+    background: rgba(16, 185, 129, 0.1);
+    border-color: rgba(16, 185, 129, 0.3);
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.card-problem .card-title {
+    color: #fca5a5;
+}
+
+.card-solution .card-title {
+    color: #6ee7b7;
+}
+
+.problem-list,
+.solution-list {
+    list-style: none;
+    color: var(--cardcolor);
+}
+
+.problem-list li,
+.solution-list li {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+     color: var(--cardcolor);
+}
+
+.bullet {
+    color: var(--text-muted);
+    flex-shrink: 0;
+}
+
+/* ============================================
+   SEÇÃO O QUE VOCÊ VAI APRENDER
+   ============================================ */
+
+.learning-section {
+    padding: 80px 20px;
+}
+
+.learning-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+}
+
+.learning-card {
+    padding: 28px;
+    background: rgba(30, 41, 59, 0.5);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.learning-card:hover {
+    background: rgba(30, 41, 59, 0.8);
+    border-color: var(--primary-color);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(59, 130, 246, 0.2);
+}
+
+.card-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.learning-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.learning-card p {
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+/* ============================================
+   SEÇÃO BÔNUS
+   ============================================ */
+
+.bonus-section {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, rgba(88, 28, 135, 0.1), rgba(30, 58, 138, 0.1));
+}
+
+.bonus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 28px;
+}
+
+.bonus-card {
+    padding: 32px;
+    background: rgba(30, 41, 59, 0.6);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    transition: var(--transition);
+}
+
+.bonus-card:hover {
+    background: rgba(30, 41, 59, 0.9);
+    transform: translateY(-8px);
+    box-shadow: var(--shadow);
+}
+
+.bonus-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.bonus-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.bonus-card p {
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+    font-size: 15px;
+}
+
+.bonus-tag {
+    display: inline-block;
+    font-size: 12px;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* ============================================
+   SEÇÃO PRÓXIMO PASSO
+   ============================================ */
+
+.next-step {
+    padding: 80px 20px;
+    background: rgba(30, 41, 59, 0.5);
+}
+
+.next-step-card {
+    background: rgba(30, 41, 59, 0.6);
+    border: 1px solid var(--border-color);
+    padding: 48px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.next-step-text {
+    font-size: 18px;
+    color: #f1f5f9;
+    margin-bottom: 32px;
+    line-height: 1.8;
+}
+
+/* ============================================
+   CTA FINAL
+   ============================================ */
+
+.cta-final {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    text-align: center;
+}
+
+.cta-final h2 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.cta-final p {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 32px;
+}
+
+.cta-buttons-final {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.or-text {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+.footer {
+    background: var(--bg-darker);
+    border-top: 1px solid var(--border-color);
+    padding: 60px 20px 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-column h3,
+.footer-column h4 {
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.footer-column p {
+    color: var(--text-muted);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 12px;
+}
+
+.footer-column a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: var(--transition);
+    font-size: 14px;
+}
+
+.footer-column a:hover {
+    color: var(--primary-color);
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--border-color);
+    padding-top: 20px;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+/* ============================================
+   ANIMAÇÕES
+   ============================================ */
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ============================================
+   RESPONSIVIDADE
+   ============================================ */
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 120px 20px 60px;
+    }
+
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .btn-large {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero-features {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .section-title {
+        font-size: 28px;
+        margin-bottom: 40px;
+        color: rgb(96, 96, 252);
+        color: var( --presente-color);
+    }
+
+    .problem-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .next-step-card {
+        padding: 32px 20px;
+    }
+
+    .cta-final h2 {
+        font-size: 28px;
+    }
+
+    .cta-final p {
+        font-size: 16px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-brand {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 24px;
+        color: var(--presente-color);
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .learning-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bonus-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-final {
+        padding: 40px 20px;
+    }
+
+    .cta-final h2 {
+        font-size: 22px;
+    }
+
+    .cta-final p {
+        font-size: 14px;
+    }
+
+    #videoCurso {
+        width: 100%;
+        height: auto;
+    }
+    .highlight {
+        font-size: 24px;
+        display: block; 
+        align-items: center;
+        justify-content: center;
+        color: #60a5fa;
+    }
+}
