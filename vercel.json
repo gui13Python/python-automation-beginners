@@ -1,7 +1,4 @@
 {
-  "buildCommand": "echo 'Static site - no build needed'",
-  "outputDirectory": ".",
-  "framework": "static",
   "headers": [
     {
       "source": "/(.*)",
@@ -32,12 +29,12 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://static.hotmart.com https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://static.hotmart.com; img-src 'self' data: https: http:; font-src 'self' data:; connect-src 'self' https://static.hotmart.com https://www.google-analytics.com https://www.googletagmanager.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self' https://pay.hotmart.com;"
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://static.hotmart.com https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://static.hotmart.com; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://static.hotmart.com https://www.google-analytics.com https://www.googletagmanager.com; frame-src https://pay.hotmart.com; base-uri 'self'; form-action 'self' https://pay.hotmart.com;"
         }
       ]
     },
     {
-      "source": "/\\.(env|json|xml|log|sql|bak|backup|old|orig)$",
+      "source": "/\\.(env|log|sql|bak|backup|old|orig)$",
       "headers": [
         {
           "key": "Cache-Control",
@@ -55,6 +52,7 @@
       ]
     }
   ],
+
   "redirects": [
     {
       "source": "/:path((?!index\\.html$).*)",
